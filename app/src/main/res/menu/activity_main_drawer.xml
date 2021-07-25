@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <item android:title="                            Drinks"
+        />
+    <group
+        android:id="@+id/cocktails"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_cocktails"
+            android:icon="@drawable/ic__cocktail2"
+            android:title="Cocktails" />
+        <item
+            android:id="@+id/nav_noAlcoholic"
+            android:icon="@drawable/ic_softdrink"
+            android:title="Soft Drinks" />
+    </group>
+    <item android:title="                            Food" />
+    <group
+        android:id="@+id/food"
+        android:checkableBehavior="none">
+
+
+        <item
+            android:id="@+id/nav_category"
+            android:icon="@drawable/ic_menu"
+            android:title="Meal Categories" />
+        <item
+            android:id="@+id/nav_food"
+            android:icon="@drawable/ic_food"
+            android:title="Meals" />
+    </group>
+    <item android:title=""></item>
+
+</menu>

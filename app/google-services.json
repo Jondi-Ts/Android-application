@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "70174817849",
+    "project_id": "cocktails-52219",
+    "storage_bucket": "cocktails-52219.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:70174817849:android:39f30bc750b09ef2d497e8",
+        "android_client_info": {
+          "package_name": "jondi.ts.cocktailappproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "70174817849-a9mupg05kcoh2cv713g064lqionj8ke9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7-0G1-aDeUbXz9EWhMXvw5PjlqSbQHpw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "70174817849-a9mupg05kcoh2cv713g064lqionj8ke9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

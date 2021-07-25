@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_cocktails">
+
+    <fragment
+        android:id="@+id/nav_cocktails"
+        android:name="jondi.ts.cocktailappproject.ui.cocktails.CocktailsFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_cocktails">
+        <action
+            android:id="@+id/action_nav_home_to_detailsFragment2"
+            app:destination="@id/detailsFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_food"
+        android:name="jondi.ts.cocktailappproject.ui.food.FoodFragment"
+        android:label="@string/menu_food"
+        tools:layout="@layout/fragment_food" >
+        <action
+            android:id="@+id/action_nav_food_to_foodDetailsFragment"
+            app:destination="@id/foodDetailsFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="jondi.ts.cocktailappproject.details.CocktailDetailsFragment"
+        android:label="Cocktail Description"
+        tools:layout="@layout/cocktail_details">
+        <action
+            android:id="@+id/action_detailsFragment_to_nav_home5"
+            app:destination="@id/nav_cocktails"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/foodDetailsFragment"
+        android:name="jondi.ts.cocktailappproject.details.FoodDetailsFragment"
+        android:label="Meal Description" >
+        <action
+            android:id="@+id/action_foodDetailsFragment_to_nav_food"
+            app:destination="@id/nav_food"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_category"
+        android:name="jondi.ts.cocktailappproject.ui.food.CategoryFragment"
+        android:label="Meals By Category"
+        tools:layout="@layout/fragment_category" >
+        <action
+            android:id="@+id/action_foodCategory_to_nav_food"
+            app:destination="@id/nav_food"
+            app:enterAnim="@anim/from_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_noAlcoholic"
+        android:name="jondi.ts.cocktailappproject.ui.cocktails.NoAlcoholicCocktailsFragment"
+        android:label="Soft Drinks"
+        tools:layout="@layout/fragment_no_alcoholic_cocktails" >
+        <action
+            android:id="@+id/action_nav_noAlcoholic_to_detailsFragment"
+            app:destination="@id/detailsFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
+    </fragment>
+
+
+</navigation>
